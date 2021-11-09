@@ -1,0 +1,1 @@
+[Odkaz na prezentaci](https://docs.google.com/presentation/d/1gHyO53PgHu8szPqbw9C5TeY8OcY3GExVBuwjFBTr1tQ/edit#slide=id.p)

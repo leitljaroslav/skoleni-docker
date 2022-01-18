@@ -11,7 +11,7 @@ docker run --rm -d --name host_net_demo --network host nginx
 
 ## none
 ```shell
-docker run --rm -d --name macvlan_net_demo --network pub_net nginx
+docker run --rm -d --name none_net_demo --network none nginx
 ```
 
 ## macvlan

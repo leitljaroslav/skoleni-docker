@@ -2,6 +2,7 @@
 ## Absolute path
 ```shell
 docker run --rm -d --name volume-demo -v $(pwd):/data leitljaroslav/volumedemo
+docker run --rm -d --name volume-demo -v /data/containers/volumedemo_data:/data leitljaroslav/volumedemo
 ```
   
 ## Named volume

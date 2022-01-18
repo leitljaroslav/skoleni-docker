@@ -7,10 +7,10 @@ services:
       - sample-project-db-data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: myawesomeapp
-      MYSQL_DATABASE: mydb
-      MYSQL_USER: pepe
-      MYSQL_PASSWORD: supersecretpassword
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASS}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
     
   wordpress:
     depends_on:
@@ -19,7 +19,7 @@ services:
     volumes:
       - sample-project-config:/var/www/html
     ports:
-      - "8080:8080"
+      - "${PUBLIC_PORT}:8080"
 volumes:
   sample-project-db-data: {}
   sample-project-config: {}
